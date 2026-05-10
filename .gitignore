@@ -1,0 +1,43 @@
+# 忽略构建中间文件，仅保留源代码、build.sh 和 CMakeLists.txt
+
+# 构建目录（常见的 build 目录）
+build/
+
+# CMake 产生的中间文件
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+cmake_check_build_system/
+
+# Makefile / build 输出
+Makefile
+
+# 目标文件与库
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+
+# 可执行文件（常见名）
+my_app
+
+# 调试/编译生成的其他文件
+*.d
+compile_commands.json
+
+# 编辑器/IDE 临时文件
+.vscode/
+.idea/
+*.swp
+*~
+
+# 日志、临时、其他不必要的文件
+*.log
+
+# 保留：不要忽略 CMakeLists.txt 和 build.sh（故未列入规则）
